@@ -1,0 +1,761 @@
+/* =====================================================
+   STUDENTHUB UNIVERSITY - MAIN CSS
+   Used for Login + Dashboard
+   ===================================================== */
+
+
+/* ================= GENERAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FA;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #222;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    background-color: #002147;
+    padding: 15px 4%;
+    border-bottom: 4px solid #00509E;
+}
+
+.header table {
+    width: 100%;
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+}
+
+.university-title {
+    color: white;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.university-subtitle {
+    color: #D7E7F7;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.header-contact {
+    color: white;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* ================= ANNOUNCEMENT ================= */
+
+.announcement {
+    background-color: #FFD54F;
+    color: #222;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #E0B800;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navigation {
+    width: 100%;
+    background-color: #34495E;
+    padding: 0;
+}
+
+.navigation td {
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 14px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #00509E;
+}
+
+
+/* Active navigation item */
+
+.navigation .active {
+    background-color: #00509E;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+
+/* ================= COMMON CARD ================= */
+
+.dashboard-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+
+/* ================= SECTION HEADERS ================= */
+
+.section-header {
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.welcome-header {
+    background-color: #00509E;
+}
+
+.services-header {
+    background-color: #1565C0;
+}
+
+.events-header {
+    background-color: #2E7D32;
+}
+
+.progress-header {
+    background-color: #EF6C00;
+}
+
+.notices-header {
+    background-color: #8E24AA;
+}
+
+.helpdesk-header {
+    background-color: #00838F;
+}
+
+
+/* ================= WELCOME ================= */
+
+.welcome-content {
+    padding: 25px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/* ================= SERVICES TABLE ================= */
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table th {
+    background-color: #EAF2F8;
+    color: #002147;
+    padding: 14px;
+    text-align: left;
+}
+
+.services-table td {
+    padding: 14px;
+    border-top: 1px solid #E1E5E8;
+}
+
+.services-table tr:hover {
+    background-color: #F4F8FC;
+}
+
+
+/* ================= EVENTS TABLE ================= */
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.events-table th {
+    background-color: #F1F8F3;
+    color: #1B5E20;
+    padding: 14px;
+    text-align: left;
+}
+
+.events-table td {
+    padding: 14px;
+    border-top: 1px solid #E1E5E8;
+}
+
+.events-table tr:hover {
+    background-color: #F5FAF6;
+}
+
+
+/* ================= EVENT STATUS ================= */
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-open {
+    background-color: #DFF5E1;
+    color: #1B5E20;
+}
+
+.status-registration {
+    background-color: #FFF3CD;
+    color: #856404;
+}
+
+.status-upcoming {
+    background-color: #E3F2FD;
+    color: #0D47A1;
+}
+
+
+/* ================= PROGRESS ================= */
+
+.progress-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.progress-table td {
+    padding: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.progress-table td:first-child {
+    font-weight: bold;
+    color: #444;
+}
+
+.progress-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #EF6C00;
+}
+
+
+/* ================= PROGRESS BAR ================= */
+
+.progress-bar-container {
+    width: 100%;
+    height: 12px;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 92%;
+    background-color: #EF6C00;
+}
+
+
+/* ================= NOTICES ================= */
+
+.notice-list {
+    padding: 20px 35px;
+    line-height: 2;
+}
+
+.notice-list li {
+    margin-bottom: 8px;
+}
+
+.notice-list li::marker {
+    color: #8E24AA;
+}
+
+
+/* ================= HELPDESK ================= */
+
+.helpdesk-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.helpdesk-table td {
+    padding: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.helpdesk-table td:first-child {
+    font-weight: bold;
+    width: 30%;
+    color: #00838F;
+}
+
+
+/* ================= LOGOUT BUTTON ================= */
+
+.logout-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.logout-button {
+    display: inline-block;
+    background-color: #C62828;
+    color: white;
+    text-decoration: none;
+    padding: 11px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #8E0000;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 100%;
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+.footer h3 {
+    margin: 5px 0 10px;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #6E8499;
+}
+
+
+/* =====================================================
+   LOGIN PAGE CSS
+   ===================================================== */
+
+.login-container {
+    width: 400px;
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.login-header {
+    background-color: #00509E;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.login-form {
+    padding: 25px;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B8C2CC;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #00509E;
+    box-shadow: 0 0 5px rgba(0, 80, 158, 0.25);
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00509E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #003F7D;
+}
+
+.register-link {
+    text-align: center;
+    margin: 20px;
+}
+
+.register-link a {
+    color: #00509E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 800px) {
+
+    .university-title {
+        font-size: 23px;
+    }
+
+    .university-subtitle {
+        font-size: 13px;
+    }
+
+    .header-contact {
+        font-size: 12px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+        padding: 12px 5px;
+    }
+
+    .dashboard-container {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .university-title {
+        font-size: 18px;
+    }
+
+    .university-subtitle {
+        font-size: 11px;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+    .navigation table,
+    .navigation tr,
+    .navigation td {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+        border-bottom: 1px solid #52677A;
+    }
+
+    .dashboard-container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .section-header {
+        font-size: 17px;
+    }
+
+    .services-table,
+    .events-table,
+    .progress-table,
+    .helpdesk-table {
+        font-size: 13px;
+    }
+
+    .services-table th,
+    .services-table td,
+    .events-table th,
+    .events-table td {
+        padding: 10px;
+    }
+
+    .login-container {
+        width: 90%;
+        margin: 40px auto;
+    }
+    /* ================= DARK / LIGHT MODE BUTTON ================= */
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+
+    background-color: #002147;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* ================= DARK MODE ================= */
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff;
+}
+
+/* Header */
+
+body.dark-mode .header {
+    background-color: #1e1e1e;
+}
+
+/* University title */
+
+body.dark-mode .university-title {
+    color: #ffffff;
+}
+
+/* Subtitle */
+
+body.dark-mode .university-subtitle {
+    color: #cccccc;
+}
+
+/* Login container */
+
+body.dark-mode .login-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Login header */
+
+body.dark-mode .login-header {
+    background-color: #333333;
+    color: #FFD54F;
+}
+
+/* Labels */
+
+body.dark-mode .login-form label {
+    color: #ffffff;
+}
+
+/* Input boxes */
+
+body.dark-mode .login-form input[type="text"],
+body.dark-mode .login-form input[type="password"] {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+/* Placeholder */
+
+body.dark-mode .login-form input::placeholder {
+    color: #aaaaaa;
+}
+
+/* Register link */
+
+body.dark-mode .register-link a {
+    color: #FFD54F;
+}
+
+/* Toggle button */
+
+body.dark-mode .theme-toggle {
+    background-color: #FFD54F;
+    color: #002147;
+}
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
+
+.theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 99999;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #002147;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body {
+    background-color: #F5F7FA;
+    color: #222222;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+
+/* Header */
+
+body.dark-mode .header {
+    background-color: #00152e !important;
+}
+
+
+/* University title */
+
+body.dark-mode .university-title {
+    color: #ffffff !important;
+}
+
+
+/* Subtitle */
+
+body.dark-mode .university-subtitle {
+    color: #dddddd !important;
+}
+
+
+/* Login box */
+
+body.dark-mode .login-container {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+
+/* Login heading */
+
+body.dark-mode .login-header {
+    background-color: #333333 !important;
+    color: #FFD54F !important;
+}
+
+
+/* Labels */
+
+body.dark-mode .login-form label {
+    color: #ffffff !important;
+}
+
+
+/* Text inputs */
+
+body.dark-mode .login-form input[type="text"],
+body.dark-mode .login-form input[type="password"] {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    border: 1px solid #666666 !important;
+}
+
+
+/* Input placeholder */
+
+body.dark-mode .login-form input::placeholder {
+    color: #aaaaaa !important;
+}
+
+
+/* Register link */
+
+body.dark-mode .register-link a {
+    color: #FFD54F !important;
+}
+
+
+/* Button in dark mode */
+
+body.dark-mode .theme-toggle {
+    background-color: #FFD54F;
+    color: #002147;
+}
+}

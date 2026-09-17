@@ -1,0 +1,566 @@
+/* =====================================================
+   STUDENTHUB UNIVERSITY - CONTACT PAGE
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FA;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #222;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    width: 100%;
+    min-height: 120px;
+    background-color: #002147;
+    border-bottom: 4px solid #00509E;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px 4%;
+    gap: 25px;
+}
+
+
+/* Logo */
+
+.header-logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+
+/* University title */
+
+.header-title {
+    flex: 1;
+    text-align: center;
+}
+
+.header-title h1 {
+    color: white;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.header-title h3 {
+    color: #D7E7F7;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+/* Header contact */
+
+.header-contact {
+    width: 20%;
+    color: white;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+.navigation {
+    width: 100%;
+    background-color: #34495E;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    display: block;
+
+    padding: 14px 18px;
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #00509E;
+}
+
+
+/* Active page */
+
+.navigation .active {
+    background-color: #00509E;
+}
+
+
+/* =====================================================
+   BANNER
+   ===================================================== */
+
+.banner {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.banner img {
+    width: 850px;
+    max-width: 90%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   CONTACT CARDS
+   ===================================================== */
+
+.contact-card,
+.info-card,
+.hours-card,
+.support-card,
+.helpdesk-card {
+    width: 85%;
+    max-width: 1100px;
+
+    margin: 25px auto;
+
+    background-color: white;
+
+    border-collapse: collapse;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CONTACT CARD
+   ===================================================== */
+
+.contact-card {
+    border-top: 5px solid #00509E;
+}
+
+.contact-card th {
+    background-color: #00509E;
+    color: white;
+
+    padding: 15px 20px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.contact-card td {
+    padding: 15px;
+
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.contact-card td:first-child {
+    width: 30%;
+    font-weight: bold;
+    color: #00509E;
+}
+
+
+/* =====================================================
+   INFORMATION CARD
+   ===================================================== */
+
+.info-card {
+    border-top: 5px solid #1565C0;
+}
+
+.info-card th {
+    background-color: #1565C0;
+    color: white;
+
+    padding: 15px 20px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.info-card td {
+    padding: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.info-card td:first-child {
+    width: 30%;
+    font-weight: bold;
+    color: #1565C0;
+}
+
+
+/* =====================================================
+   OFFICE HOURS
+   ===================================================== */
+
+.hours-card {
+    border-top: 5px solid #2E7D32;
+}
+
+.hours-card th {
+    background-color: #2E7D32;
+    color: white;
+
+    padding: 15px 20px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.hours-card td {
+    padding: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.hours-card td:first-child {
+    width: 30%;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+
+/* =====================================================
+   SUPPORT CARD
+   ===================================================== */
+
+.support-card {
+    border-top: 5px solid #EF6C00;
+}
+
+.support-card th {
+    background-color: #EF6C00;
+    color: white;
+
+    padding: 15px 20px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.support-card td {
+    padding: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.support-card td:first-child {
+    width: 30%;
+    font-weight: bold;
+    color: #EF6C00;
+}
+
+
+/* =====================================================
+   HELPDESK CARD
+   ===================================================== */
+
+.helpdesk-card {
+    border-top: 5px solid #00838F;
+}
+
+.helpdesk-card th {
+    background-color: #00838F;
+    color: white;
+
+    padding: 15px 20px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.helpdesk-card td {
+    padding: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.helpdesk-card td:first-child {
+    width: 30%;
+    font-weight: bold;
+    color: #00838F;
+}
+
+
+/* =====================================================
+   LINKS INSIDE CARDS
+   ===================================================== */
+
+.contact-card a,
+.info-card a,
+.hours-card a,
+.support-card a,
+.helpdesk-card a {
+    color: #00509E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover,
+.info-card a:hover,
+.hours-card a:hover,
+.support-card a:hover,
+.helpdesk-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    width: 100%;
+
+    background-color: #002147;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 10px;
+
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin: 5px 0 10px;
+}
+
+footer hr {
+    width: 40%;
+
+    border: none;
+    border-top: 1px solid #6E8499;
+
+    margin: 15px auto;
+}
+
+
+/* =====================================================
+   TABLE HOVER EFFECT
+   ===================================================== */
+
+.contact-card tr:hover,
+.info-card tr:hover,
+.hours-card tr:hover,
+.support-card tr:hover,
+.helpdesk-card tr:hover {
+    background-color: #F4F8FC;
+}
+
+
+/* =====================================================
+   TABLET RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 15px 3%;
+        gap: 15px;
+    }
+
+    .header-logo {
+        width: 15%;
+    }
+
+    .header-logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-title h1 {
+        font-size: 23px;
+    }
+
+    .header-title h3 {
+        font-size: 13px;
+    }
+
+    .header-contact {
+        font-size: 12px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+        padding: 12px 8px;
+    }
+
+    .banner img {
+        width: 90%;
+        height: 220px;
+    }
+
+    .contact-card,
+    .info-card,
+    .hours-card,
+    .support-card,
+    .helpdesk-card {
+        width: 90%;
+    }
+
+    .contact-card th,
+    .info-card th,
+    .hours-card th,
+    .support-card th,
+    .helpdesk-card th {
+        font-size: 18px;
+    }
+
+    .contact-card td,
+    .info-card td,
+    .hours-card td,
+    .support-card td,
+    .helpdesk-card td {
+        padding: 12px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .header-logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .header-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-title {
+        width: 100%;
+    }
+
+    .header-title h1 {
+        font-size: 18px;
+    }
+
+    .header-title h3 {
+        font-size: 11px;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+
+    /* Navigation */
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        text-align: center;
+
+        border-bottom: 1px solid #52677A;
+
+        padding: 12px;
+    }
+
+
+    /* Banner */
+
+    .banner {
+        margin: 20px 0;
+    }
+
+    .banner img {
+        width: 94%;
+        height: 180px;
+    }
+
+
+    /* Cards */
+
+    .contact-card,
+    .info-card,
+    .hours-card,
+    .support-card,
+    .helpdesk-card {
+        width: 94%;
+        font-size: 13px;
+    }
+
+    .contact-card th,
+    .info-card th,
+    .hours-card th,
+    .support-card th,
+    .helpdesk-card th {
+        font-size: 17px;
+        padding: 12px;
+    }
+
+    .contact-card td,
+    .info-card td,
+    .hours-card td,
+    .support-card td,
+    .helpdesk-card td {
+        padding: 10px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        font-size: 13px;
+        padding: 20px 10px;
+    }
+
+    footer hr {
+        width: 60%;
+    }
+}

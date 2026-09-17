@@ -1,0 +1,546 @@
+/* =====================================================
+   STUDENTHUB UNIVERSITY - EVENTS PAGE
+   ===================================================== */
+
+/* ================= GENERAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FA;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #222;
+}
+
+/* Remove default spacing caused by center/table structure */
+center {
+    width: 100%;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+body > center > table:first-of-type {
+    width: 100%;
+    background-color: #002147;
+    border-bottom: 4px solid #00509E;
+    padding: 15px 4%;
+}
+
+body > center > table:first-of-type td {
+    vertical-align: middle;
+}
+
+body > center > table:first-of-type td:first-child {
+    width: 15%;
+}
+
+body > center > table:first-of-type img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+body > center > table:first-of-type h1 {
+    color: white;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+body > center > table:first-of-type h3 {
+    color: #D7E7F7;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+body > center > table:first-of-type td:last-child {
+    color: white;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   ANNOUNCEMENT
+   ===================================================== */
+
+body > center > marquee {
+    display: block;
+    width: 100%;
+    background-color: #FFD54F;
+    color: #222;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #E0B800;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+body > center > table:nth-of-type(2) {
+    width: 100%;
+    background-color: #34495E;
+    border: none;
+    border-collapse: collapse;
+}
+
+body > center > table:nth-of-type(2) td {
+    padding: 0;
+    border: none;
+}
+
+body > center > table:nth-of-type(2) a {
+    display: block;
+    padding: 14px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+body > center > table:nth-of-type(2) a:hover {
+    background-color: #00509E;
+}
+
+
+/* =====================================================
+   EVENT BANNER
+   ===================================================== */
+
+body > center > img {
+    width: 850px;
+    max-width: 90%;
+    height: 250px;
+    object-fit: cover;
+    margin: 25px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   COMMON TABLE STYLE
+   ===================================================== */
+
+body > center > table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+body > center > table th,
+body > center > table td {
+    padding: 14px;
+}
+
+
+/* =====================================================
+   EVENTS CALENDAR
+   ===================================================== */
+
+body > center > table:nth-of-type(3) {
+    width: 90%;
+    max-width: 1200px;
+}
+
+body > center > table:nth-of-type(3) tr:first-child {
+    background-color: #00509E;
+}
+
+body > center > table:nth-of-type(3) tr:first-child th {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+body > center > table:nth-of-type(3) tr:nth-child(2) {
+    background-color: #EAF2F8;
+    color: #002147;
+}
+
+body > center > table:nth-of-type(3) tr:nth-child(2) th {
+    text-align: left;
+}
+
+body > center > table:nth-of-type(3) td {
+    border-top: 1px solid #E1E5E8;
+}
+
+body > center > table:nth-of-type(3) tr:hover:not(:first-child):not(:nth-child(2)) {
+    background-color: #F4F8FC;
+}
+
+
+/* =====================================================
+   EVENT STATUS
+   ===================================================== */
+
+/* Registration Open */
+body > center > table:nth-of-type(3) tr:nth-child(3) td:last-child {
+    color: #856404;
+    font-weight: bold;
+}
+
+body > center > table:nth-of-type(3) tr:nth-child(3) td:last-child::before {
+    content: "● ";
+    color: #F0AD00;
+}
+
+/* Open */
+body > center > table:nth-of-type(3) tr:nth-child(4) td:last-child,
+body > center > table:nth-of-type(3) tr:nth-child(6) td:last-child {
+    color: #1B5E20;
+    font-weight: bold;
+}
+
+body > center > table:nth-of-type(3) tr:nth-child(4) td:last-child::before,
+body > center > table:nth-of-type(3) tr:nth-child(6) td:last-child::before {
+    content: "● ";
+    color: #2E7D32;
+}
+
+/* Upcoming */
+body > center > table:nth-of-type(3) tr:nth-child(5) td:last-child {
+    color: #0D47A1;
+    font-weight: bold;
+}
+
+body > center > table:nth-of-type(3) tr:nth-child(5) td:last-child::before {
+    content: "● ";
+    color: #1565C0;
+}
+
+/* Coming Soon */
+body > center > table:nth-of-type(3) tr:nth-child(7) td:last-child {
+    color: #8E24AA;
+    font-weight: bold;
+}
+
+body > center > table:nth-of-type(3) tr:nth-child(7) td:last-child::before {
+    content: "● ";
+    color: #8E24AA;
+}
+
+
+/* =====================================================
+   EVENT CATEGORIES
+   ===================================================== */
+
+body > center > table:nth-of-type(4) {
+    width: 80%;
+    max-width: 1000px;
+}
+
+body > center > table:nth-of-type(4) tr:first-child {
+    background-color: #1565C0;
+}
+
+body > center > table:nth-of-type(4) tr:first-child th {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+body > center > table:nth-of-type(4) ul {
+    margin: 5px 0;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+body > center > table:nth-of-type(4) li::marker {
+    color: #1565C0;
+}
+
+
+/* =====================================================
+   BENEFITS
+   ===================================================== */
+
+body > center > table:nth-of-type(5) {
+    width: 80%;
+    max-width: 1000px;
+}
+
+body > center > table:nth-of-type(5) tr:first-child {
+    background-color: #2E7D32;
+}
+
+body > center > table:nth-of-type(5) tr:first-child th {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+body > center > table:nth-of-type(5) ul {
+    margin: 5px 0;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+body > center > table:nth-of-type(5) li::marker {
+    color: #2E7D32;
+}
+
+
+/* =====================================================
+   EVENT COORDINATION OFFICE
+   ===================================================== */
+
+body > center > table:nth-of-type(6) {
+    width: 70%;
+    max-width: 900px;
+}
+
+body > center > table:nth-of-type(6) tr:first-child {
+    background-color: #EF6C00;
+}
+
+body > center > table:nth-of-type(6) tr:first-child th {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+body > center > table:nth-of-type(6) td {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+body > center > table:nth-of-type(6) td:first-child {
+    width: 30%;
+    font-weight: bold;
+    color: #EF6C00;
+}
+
+
+/* =====================================================
+   REGISTER FOR EVENTS
+   ===================================================== */
+
+body > center > table:nth-of-type(7) {
+    width: 60%;
+    max-width: 700px;
+}
+
+body > center > table:nth-of-type(7) tr:first-child {
+    background-color: #8E24AA;
+}
+
+body > center > table:nth-of-type(7) tr:first-child th {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
+body > center > table:nth-of-type(7) td {
+    padding: 25px;
+    line-height: 1.6;
+}
+
+body > center > table:nth-of-type(7) a {
+    display: inline-block;
+    background-color: #8E24AA;
+    color: white;
+    text-decoration: none;
+    padding: 11px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+body > center > table:nth-of-type(7) a:hover {
+    background-color: #6A1B9A;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+body > center > table:last-of-type {
+    width: 100%;
+    background-color: #002147;
+    color: white;
+    margin-top: 40px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+body > center > table:last-of-type h3 {
+    margin: 5px 0 10px;
+}
+
+body > center > table:last-of-type hr {
+    border: none;
+    border-top: 1px solid #6E8499;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN - TABLET
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    body > center > table:first-of-type h1 {
+        font-size: 23px;
+    }
+
+    body > center > table:first-of-type h3 {
+        font-size: 13px;
+    }
+
+    body > center > table:first-of-type td:last-child {
+        font-size: 12px;
+    }
+
+    body > center > table:nth-of-type(2) a {
+        font-size: 12px;
+        padding: 12px 5px;
+    }
+
+    body > center > table:nth-of-type(3) {
+        width: 95%;
+    }
+
+    body > center > table:nth-of-type(4),
+    body > center > table:nth-of-type(5) {
+        width: 90%;
+    }
+
+    body > center > table:nth-of-type(6) {
+        width: 85%;
+    }
+
+    body > center > table:nth-of-type(7) {
+        width: 80%;
+    }
+
+    body > center > table:nth-of-type(3) th,
+    body > center > table:nth-of-type(3) td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN - MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body > center > table:first-of-type {
+        padding: 15px;
+    }
+
+    body > center > table:first-of-type img {
+        width: 60px;
+        height: 60px;
+    }
+
+    body > center > table:first-of-type h1 {
+        font-size: 18px;
+    }
+
+    body > center > table:first-of-type h3 {
+        font-size: 11px;
+    }
+
+    body > center > table:first-of-type td:last-child {
+        display: none;
+    }
+
+    /* Mobile navigation */
+    body > center > table:nth-of-type(2),
+    body > center > table:nth-of-type(2) tbody,
+    body > center > table:nth-of-type(2) tr,
+    body > center > table:nth-of-type(2) td {
+        display: block;
+        width: 100%;
+    }
+
+    body > center > table:nth-of-type(2) a {
+        text-align: center;
+        border-bottom: 1px solid #52677A;
+    }
+
+    /* Banner */
+    body > center > img {
+        width: 94%;
+        height: 180px;
+        margin: 20px auto;
+    }
+
+    /* Event calendar */
+    body > center > table:nth-of-type(3) {
+        width: 94%;
+        font-size: 12px;
+    }
+
+    body > center > table:nth-of-type(3) th,
+    body > center > table:nth-of-type(3) td {
+        padding: 9px 6px;
+    }
+
+    body > center > table:nth-of-type(3) tr:first-child th,
+    body > center > table:nth-of-type(4) tr:first-child th,
+    body > center > table:nth-of-type(5) tr:first-child th,
+    body > center > table:nth-of-type(6) tr:first-child th,
+    body > center > table:nth-of-type(7) tr:first-child th {
+        font-size: 17px;
+    }
+
+    /* Categories */
+    body > center > table:nth-of-type(4),
+    body > center > table:nth-of-type(5) {
+        width: 94%;
+    }
+
+    body > center > table:nth-of-type(4) ul,
+    body > center > table:nth-of-type(5) ul {
+        line-height: 1.8;
+        font-size: 14px;
+    }
+
+    /* Coordinator */
+    body > center > table:nth-of-type(6) {
+        width: 94%;
+        font-size: 13px;
+    }
+
+    body > center > table:nth-of-type(6) td {
+        padding: 10px;
+    }
+
+    /* Register */
+    body > center > table:nth-of-type(7) {
+        width: 90%;
+    }
+
+    body > center > table:nth-of-type(7) td {
+        padding: 20px;
+    }
+
+    /* Footer */
+    body > center > table:last-of-type {
+        font-size: 13px;
+    }
+}

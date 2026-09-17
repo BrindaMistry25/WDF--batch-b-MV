@@ -1,0 +1,432 @@
+/* ================= GENERAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FA;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #333;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    min-height: 120px;
+    background-color: #002147;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 30px;
+}
+
+.header-logo {
+    width: 15%;
+}
+
+.header-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.header-title {
+    text-align: center;
+    flex: 1;
+}
+
+.header-title h1 {
+    margin: 5px 0;
+    font-size: 28px;
+}
+
+.header-title h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.header-contact {
+    width: 20%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+
+/* ================= ANNOUNCEMENT ================= */
+
+.announcement {
+    background-color: #FFD54F;
+    padding: 10px;
+    text-align: center;
+    color: #222;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navigation {
+    width: 100%;
+    background-color: #34495E;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+
+    padding: 13px 20px;
+
+    border-right: 1px solid #607080;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navigation a:hover {
+    background-color: #1565C0;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+.page-title {
+    text-align: center;
+    margin: 30px auto 20px;
+}
+
+.page-title h2 {
+    color: #00509E;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.page-title p {
+    color: #555;
+}
+
+
+/* ================= FORM CONTAINER ================= */
+
+.form-container {
+    width: 75%;
+    max-width: 900px;
+
+    margin: 20px auto 40px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= FORM SECTION ================= */
+
+.form-section {
+    margin-bottom: 30px;
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    border-radius: 6px;
+}
+
+.form-section h3 {
+    background-color: #00509E;
+    color: white;
+
+    padding: 12px;
+
+    margin: -20px -20px 20px;
+
+    border-radius: 6px 6px 0 0;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* ================= FORM ROW ================= */
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+
+/* ================= FORM GROUP ================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #34495E;
+}
+
+.form-group label span {
+    color: red;
+}
+
+
+/* ================= INPUTS ================= */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #1565C0;
+
+    box-shadow: 0 0 5px rgba(21, 101, 192, 0.25);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ================= RADIO BUTTONS ================= */
+
+.radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input {
+    margin-right: 7px;
+}
+
+
+/* ================= CHECKBOX ================= */
+
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.button-area {
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+.submit-btn,
+.reset-btn {
+    border: none;
+
+    padding: 13px 25px;
+
+    margin: 5px;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #1B5E20;
+}
+
+.reset-btn {
+    background-color: #EF6C00;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #D84315;
+}
+
+
+/* ================= SUCCESS / ERROR MESSAGE ================= */
+
+#message {
+    text-align: center;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 100%;
+
+    background-color: #002147;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+}
+
+.footer p {
+    margin: 8px;
+}
+
+.footer hr {
+    width: 40%;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 10px;
+    }
+
+    .header-logo,
+    .header-contact {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .header-title h1 {
+        font-size: 22px;
+    }
+
+    .header-title h3 {
+        font-size: 14px;
+    }
+
+    .navigation a {
+        width: 50%;
+
+        text-align: center;
+
+        border-bottom: 1px solid #607080;
+    }
+
+    .form-container {
+        width: 90%;
+
+        padding: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .radio-group {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .navigation a {
+        width: 100%;
+    }
+
+    .page-title h2 {
+        font-size: 22px;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+
+    .submit-btn,
+    .reset-btn {
+        width: 90%;
+    }
+
+}

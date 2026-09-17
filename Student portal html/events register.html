@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub University - Event Application</title>
+
+    <link rel="stylesheet" href="event-apply.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="header-logo">
+        <!-- Replace this with your university logo if needed -->
+        <img src="YOUR_LOGO" alt="StudentHub University Logo">
+    </div>
+
+    <div class="header-title">
+        <h1>STUDENTHUB UNIVERSITY</h1>
+        <h3>Student Portal | Learning • Research • Innovation</h3>
+    </div>
+
+    <div class="header-contact">
+        <p>
+            Admissions Office<br>
+            info@studenthub.edu<br>
+            +91 9876543210
+        </p>
+    </div>
+
+</header>
+
+
+<!-- ================= ANNOUNCEMENT ================= -->
+
+<div class="announcement">
+    <b>
+        National Hackathon | AI Workshop | Sports Meet |
+        Cultural Fest | Register Now
+    </b>
+</div>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="navigation">
+
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="register.html">ADMISSION</a>
+    <a href="dashboard.html">DASHBOARD</a>
+    <a href="profile.html">PROFILE</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="feedback.html">FEEDBACK</a>
+
+</nav>
+
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <h2>EVENT APPLICATION FORM</h2>
+
+    <p>
+        Apply for university events, workshops, competitions and activities.
+    </p>
+
+</section>
+
+
+<!-- ================= APPLICATION FORM ================= -->
+
+<div class="form-container">
+
+    <form id="eventForm">
+
+        <!-- Personal Information -->
+
+        <div class="form-section">
+
+            <h3>PERSONAL INFORMATION</h3>
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name <span>*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="studentId">
+                        Student ID <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentId"
+                        name="studentId"
+                        placeholder="Example: STU2026001"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="course">
+                        Course <span>*</span>
+                    </label>
+
+                    <select id="course" name="course" required>
+
+                        <option value="">
+                            Select Course
+                        </option>
+
+                        <option value="B.Tech IT">
+                            B.Tech Information Technology
+                        </option>
+
+                        <option value="B.Tech CSE">
+                            B.Tech Computer Science
+                        </option>
+
+                        <option value="B.Tech AI">
+                            B.Tech Artificial Intelligence
+                        </option>
+
+                        <option value="BBA">
+                            BBA
+                        </option>
+
+                        <option value="BCA">
+                            BCA
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="student@example.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="10-digit mobile number"
+                        maxlength="10"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Event Information -->
+
+        <div class="form-section">
+
+            <h3>EVENT INFORMATION</h3>
+
+
+            <div class="form-group">
+
+                <label for="event">
+                    Select Event <span>*</span>
+                </label>
+
+                <select id="event" name="event" required>
+
+                    <option value="">
+                        Select an Event
+                    </option>
+
+                    <option value="National Hackathon">
+                        National Hackathon - 10 August 2026
+                    </option>
+
+                    <option value="AI & Machine Learning Workshop">
+                        AI & Machine Learning Workshop - 18 August 2026
+                    </option>
+
+                    <option value="Campus Placement Drive">
+                        Campus Placement Drive - 25 August 2026
+                    </option>
+
+                    <option value="Sports Meet">
+                        Sports Meet - 30 August 2026
+                    </option>
+
+                    <option value="Cultural Festival">
+                        Cultural Festival - 5 September 2026
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Participation Type <span>*</span>
+                </label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
+                            value="Individual"
+                            required
+                        >
+                        Individual
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
+                            value="Team"
+                        >
+                        Team
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="teamName">
+                    Team Name
+                </label>
+
+                <input
+                    type="text"
+                    id="teamName"
+                    name="teamName"
+                    placeholder="Enter team name if applicable"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="experience">
+                    Previous Experience
+                </label>
+
+                <textarea
+                    id="experience"
+                    name="experience"
+                    rows="4"
+                    placeholder="Briefly describe your previous experience..."
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!-- Additional Information -->
+
+        <div class="form-section">
+
+            <h3>ADDITIONAL INFORMATION</h3>
+
+
+            <div class="form-group">
+
+                <label for="interest">
+                    Why do you want to participate?
+                    <span>*</span>
+                </label>
+
+                <textarea
+                    id="interest"
+                    name="interest"
+                    rows="5"
+                    placeholder="Tell us why you are interested in this event..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="checkbox-group">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    I confirm that the information provided is correct.
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="button-area">
+
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+                SUBMIT APPLICATION
+            </button>
+
+            <button
+                type="reset"
+                class="reset-btn"
+            >
+                RESET
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+
+    </form>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <h3>StudentHub University</h3>
+
+    <p>
+        Student Portal | Academics | Research | Innovation
+    </p>
+
+    <hr>
+
+    <p>
+        © 2026 StudentHub University
+    </p>
+
+</footer>
+
+
+<script src="event-apply.js"></script>
+
+</body>
+
+</html>
